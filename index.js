@@ -3397,8 +3397,7 @@ const App = () => {
         return React.createElement(StatisticsView, { onSelectExercise: handleSelectExercise, getExercisePR: getExercisePR, history: history });
     }
   };
-
-  return (React.createElement("div", { className: "app-container" },
+return (React.createElement("div", { className: "app-container" },
     renderContent(),
     !activeWorkout && !selectedExerciseId && React.createElement(BottomNav, { currentView: currentView, setView: setCurrentView })
   );
@@ -3407,4 +3406,4 @@ const App = () => {
 const container = document.getElementById('root');
 if (container) {
   createRoot(container).render(React.createElement(App, null));
-}
+  
